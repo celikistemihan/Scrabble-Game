@@ -74,7 +74,6 @@ class ViewController: UITableViewController {
             if isOriginal(word: lowerAnswer) {
                 if isReal(word: lowerAnswer){
                     //Insert the new word into our usedWords array at index 0. This means "add it to the start of the array," and means that the newest words will appear at the top of the table view.
-                    //.Lowercased fixes the bug for bonus challenge, it was about upper case letter entry
                     usedWords.insert(answer.lowercased(), at: 0)
                     
                     let indexPath = IndexPath(row: 0, section: 0)
